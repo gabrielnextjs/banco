@@ -25,12 +25,6 @@ def vender():
 
     return nome
 
-
-
-
-
-
-
 pecas_pc = []
 
 
@@ -54,8 +48,11 @@ DIGITE UMA OPCAO A SEGUIR: '''))
             print(f"AQUI ESTA A LISTA DE PRODUTOS: {pecas_pc}")
         elif opcao == 3:
             vender_peca = vender()
-
-        
+        elif opcao == 4:
+            arquivo = open("estoque.txt", "w")
+            for pecas in pecas_pc:
+                arquivo.write(f"Objeto: {pecas['nome']} Com preco: {pecas['preco']} com quantidade: {pecas['quantidade']}\n")
+            arquivo.close()
 
     except ValueError:
         print("LEIA COM ATENCAO: DIGITE APENAS NUMEROS")

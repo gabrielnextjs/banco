@@ -1,0 +1,1 @@
+Objeto: ram Com preco: 87.0 com quantidade: 45
