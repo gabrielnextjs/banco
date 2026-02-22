@@ -1,8 +1,0 @@
-Caixa fechada: Hash 0XYZ | Garrafas: 6
-Caixa fechada: Hash 7XYZ | Garrafas: 6
-Caixa fechada: Hash 13XY | Garrafas: 6
-Caixa fechada: Hash 20XY | Garrafas: 6
-Caixa fechada: Hash 28XY | Garrafas: 6
-Caixa fechada: Hash 36XY | Garrafas: 6
-Caixa fechada: Hash 44XY | Garrafas: 6
-Caixa fechada: Hash 52XY | Garrafas: 6

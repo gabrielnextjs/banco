@@ -31,7 +31,7 @@ DIGITE O NUMERO QUE CORRRESPONDE A SUA ESCOLHA: '''))
             senha_pronta = codificar(texto, chave)
             print(f'''Aqui esta sua nova senha lacrada:
                         {senha_pronta}''')
-            with open("cursogemini/senhas_salvas.txt", "a") as arquivo:
+            with open("projetos/Criptografia de Senhas/senhas_salvas.txt", "a") as arquivo:
                 arquivo.write(f"Senha codificada: {senha_pronta} , Usando a chave: {chave} \n")
 
         elif opcao == 2:
