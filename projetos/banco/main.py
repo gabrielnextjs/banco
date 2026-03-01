@@ -1,5 +1,7 @@
+import tkinter
 from functions import *
 contas  = carregar_contas()
+
 
 print("BEM VINDO!")
 
@@ -28,14 +30,15 @@ INSIRA: '''))
 
         if conta_logada:
                 menu_conta = 0
-                while menu_conta != 4:
+                while menu_conta != 5:
                     while True:
                         try:
                             menu_conta = int(input('''
 [1]Ver saldo
 [2]Transferir
 [3]Depositar
-[4]Sair
+[4]Sacar
+[5]Sair
 INSIRA: '''))
                             break
                         except ValueError:
@@ -48,5 +51,10 @@ INSIRA: '''))
                     elif menu_conta == 3:
                         depositar(conta_logada, contas)
                     elif menu_conta == 4:
+                        sacar(conta_logada, contas)
+                    elif menu_conta == 5:
                         print("Voce saiu!")
                         break
+
+
+print(tkinter.TkVersion)

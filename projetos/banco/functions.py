@@ -1,5 +1,6 @@
 import json
 import hashlib
+import tkinter as tk
 
 def carregar_contas():
     with open("/home/gabriel/Documentos/Projeto/banco/projetos/banco/contas.json" , "r") as arquivo:
@@ -107,3 +108,33 @@ Voce esta trasferindo para conta: {contas[destino]["nome"]} digite [1] para pros
 
 def hashear(senha):
     return hashlib.sha256(str(senha).encode()).hexdigest()
+
+def sacar(conta_logada, contas):
+    while True:
+        try:
+            valor = int(input("Digite o  valor do saque: "))
+            break
+        except ValueError:
+            print("Digite apenas numeros")
+
+    if valor == 0:
+        print("O valor deve ser maior doque zero absoluto")
+    elif contas[conta_logada["numero"]]["saldo"] < valor:
+        print("Saldo insufiente")
+    else:
+        deseja = 0
+        while deseja != 2:
+            deseja = int(input(f'''
+Voce esta sacando para conta: {contas[conta_logada["numero"]]["nome"] } digite [1] para prosseguir e [2] para cancelar: '''))
+            if deseja == 1:
+                contas[conta_logada["numero"]]["saldo"] -= valor
+                salvar_contas(contas)
+                print(f"Saque de valor R$ {valor:.2f} realizado")
+                break
+            elif deseja == 2:
+                break
+
+def ao_clicar():
+    print("Clicou")
+
+
