@@ -1,0 +1,10 @@
+{
+  "data": [
+    { "name": "Clownfish", "species": "Amphiprioninae", "tank-number": 18, "type": "saltwater" },
+    { "name": "Blue Tang", "species": "Paracanthurus hepatus", "tank-number": 5, "type": "saltwater" },
+    { "name": "Betta", "species": "Betta splendens", "tank-number": 12, "type": "freshwater" },
+    { "name": "Goldfish", "species": "Carassius auratus", "tank-number": 7, "type": "freshwater" },
+    { "name": "Angelfish", "species": "Pterophyllum scalare", "tank-number": 3, "type": "freshwater" },
+    { "name": "Neon Tetra", "species": "Paracheirodon innesi", "tank-number": 9, "type": "freshwater" }
+  ]
+}
