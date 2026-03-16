@@ -1,0 +1,3 @@
+{'nome': 'João Silva', 'sala': '101', 'turno': 'Manhã', 'situacao': 'Aprovado', 'idade': 15, 'ano_letivo': 2024}
+{'nome': 'Gabriel', 'sala': 'a', 'turno': 'MAtutino', 'situacao': None, 'idade': 16, 'ano_letivo': 2026}
+{'nome': 'Gabrel', 'sala': '16', 'turno': '12', 'situacao': 'Menor de idade', 'idade': 12, 'ano_letivo': 34}

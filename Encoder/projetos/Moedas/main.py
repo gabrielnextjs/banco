@@ -1,4 +1,5 @@
 import time
+from utils import premen , preven
 
 def numero(mensagem, tipo= int):
     while True:
@@ -99,12 +100,14 @@ def maior():
 
     lista = []
     while True:
-        numeros = numero("Insira os numeros (ou digite [0] para encerrar): ")
+        numeros = preven("Insira os numeros (ou digite [0] para encerrar): ")
         if numeros == 0:
             break
         lista.append(numeros)
     if lista:
-        mensagem(f"O maior numero e {max(lista)}")
+        premen(f"O maior numero e {max(lista)}")
     else:
-        mensagem("Nenhum numero inserido.")
+        premen("Nenhum numero inserido.")
+
+
 
